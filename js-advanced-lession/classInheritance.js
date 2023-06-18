@@ -1,25 +1,63 @@
-class CoffeeMachine{
-    makeCoffee(){
-      console.log('making coffe...');
+class mouse {
+    constructor(name) {
+        this.name = name;
     }
-  }
-  
-  class SpecialCoffeeMachine extends CoffeeMachine{
-    //overriding - ghi đè
-    makeCoffee(cb){
-      console.log('making coffee and do something...');
-      cb();
+    run() {
+        console.log(`${this.name} is running`);
     }
-    // makeCoffee(color,time){
-    //   console.log('coffee making has color:'+color+'and time is:'+time);
-    // }
-    //js không thể chuyền số lượng tham số khác nhau là hàm khác nhau khi hàm cùng tên -tính đa hình của oop như oop trong java
-  }
-  const coffeeMachine=new SpecialCoffeeMachine();
-  coffeeMachine.makeCoffee(function(){
-    console.log('callback func is runed');
-  });
-  //making coffee and do something...
-  //callback func is runed
-  
-  // coffeeMachine.makeCoffee('blue',15);
+}
+const chuot = new mouse('mickey');
+chuot.run();//mickey is running
+
+// class inheritance
+class animal {
+    constructor(name) {
+        this.name = name;
+    }
+    eat() {
+        console.log('eating ....');
+    }
+}
+class bird extends animal {
+    fly() {
+        console.log('flying ....');
+    }
+}
+const chim = new bird('kkkk');
+chim.eat();//eating ....
+chim.fly();//flying ....
+
+class Parrot extends bird {
+    speak() {
+        console.log('speaking.....');
+    }
+}
+const vet = new Parrot('aaaa');
+vet.speak();//speaking.....
+
+//========kế thừa trong constructor function
+function DongVat(name) {
+    this.name = name;
+}
+DongVat.prototype.ten = function () {
+    console.log('my name is:' + this.name);
+}
+DongVat.prototype.eat = function () {
+    console.log('eating eat.....');
+}
+function voi(name) {
+}
+voi.prototype = new DongVat();//voi kế thừa constructor func DongVat
+
+var convoi = new voi('sdf');
+convoi.eat();//eating eat.....
+convoi.ten();//my name is:undefined
+
+function Ho(name) {
+    //ho kế thừa constructor function của động vật
+    DongVat.apply(this, arguments);
+}
+Ho.prototype = new DongVat();
+var ho = new Ho('hổ nâu');
+ho.eat();//eating eat.....
+ho.ten();//my name is:hổ nâu
