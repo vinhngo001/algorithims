@@ -21,5 +21,14 @@
 /**
  * Điều khác biệt giữa primitive với object là primitive không có bất kỳ thuộc tính hay phương thức nào. 
  * Tuy nhiên, bạn cần lưu ý rằng 'foo'.toUpperCase() ước tính là 'FOO' và không dẫn đến TypeError.
+ */
+
+/**
+ * const numbers = [1, 2, 3];
+ * numbers[10] = 11;
+ * console.log(numbers);
  * 
+ * Trong Javascript thì khi bạn set một giá trị có index vượt quá độ dài của mảng, JavaScript sẽ tạo ra một thứ gọi là 'empty'.
+ * Chúng thực sự có giá trị undefined, nhưng bạn sẽ thấy như là: [1, 2, 3, 7 x empty, 11]
+ * tùy thuộc vào nơi bạn chạy nó (nó khác nhau đối với các trình duyệt, node, v.v.)
  */
