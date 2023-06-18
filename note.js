@@ -14,3 +14,12 @@
  * [...]: spread operator
  * Array.slice
  */
+
+//Hàm constructor giống như new Number và new Boolean đều là truthy value.
+//Kiểu nguyên thủy bao gồm: boolean, null, undefined, bigint, number, string, and symbol
+
+/**
+ * Điều khác biệt giữa primitive với object là primitive không có bất kỳ thuộc tính hay phương thức nào. 
+ * Tuy nhiên, bạn cần lưu ý rằng 'foo'.toUpperCase() ước tính là 'FOO' và không dẫn đến TypeError.
+ * 
+ */
