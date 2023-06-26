@@ -1,4 +1,4 @@
-# Learning Subjects To Prepare For Next Interview.
+# Learning Subjects To Prepare Interview.
 
 ## I. Basic Knowledge
   1. [ ] Algorithm
