@@ -32,3 +32,14 @@
  * Chúng thực sự có giá trị undefined, nhưng bạn sẽ thấy như là: [1, 2, 3, 7 x empty, 11]
  * tùy thuộc vào nơi bạn chạy nó (nó khác nhau đối với các trình duyệt, node, v.v.)
  */
+
+// Trong JavaScript, undefined , null , 0 , NaN , "" sẽ chuyển thành false .
+/**
+ * Có 4 cách để tạo một đối tượng date như sau:
+ * // Tạo đối tượng date ứng với thời gian hiện tại
+ * new Date()
+ * // Tạo đối tượng date ứng với đối số truyền vào
+ * new Date(milliseconds)
+ * new Date(date string)
+ * new Date(year, month, day, hours, minutes, seconds, milliseconds)
+ */
