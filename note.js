@@ -43,3 +43,20 @@
  * new Date(date string)
  * new Date(year, month, day, hours, minutes, seconds, milliseconds)
  */
+// Mọi nodes có đúng 1 node cha
+
+// Thuộc tính nào giúp kế thừa margin từ thẻ cha của một phần tử? : inherit
+// Thuộc tính CSS nào ảnh hưởng đến độ tròn của đường viền? : border-radius
+// Về cơ bản, navigation bar là một danh sách các liên kết? : đúng
+// Phương thức nào sau đây được dùng tạo value cho key của một Map? : set()
+// Từ khóa nào được sử dụng để ném ra một ngoại lệ? : catch
+// Ngữ cảnh thực thi global của JavaScript tạo ra 2 thứ cho chúng ta: global object, và từ khóa "this". Đúng hay sai: Đúng
+
+/**
+    1 == '1'; // true
+    1 == [1]; // true
+    1 == true; // true
+    0 == ''; // true
+    0 == '0'; // true
+    0 == false; // true
+ */
