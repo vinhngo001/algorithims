@@ -1,19 +1,14 @@
-// viết hàm kiểm tra xem một chuỗi bắt đầu bằng "Java" hay không 
+/** 
+ * Viết hàm lấy extension của một file
+ * Example
+ * getExtensionFilename("abc.mp3") // "mp3"
+*/
 
-// sol 1
-function startWith1(str){
-    return str.split(0, 5).join('') === "Java" ? true : false;
+function getExtensionFilename(str){
+    const arr = str.split('.');
+    return arr[arr.length - 1].trim();
 }
-console.log(startWith1('Java'))
 
-// sol 2
-function startWith2(str){
-    return str.substring(0, 4) === 'Java' ? true : false;
-}
-console.log(startWith2('XJava'))
-
-// sol 3
-function startWith3(str){
-    return str.startsWith('Java') ? true : false;
-}
-console.log(startWith3('Javascript'))
+console.log(getExtensionFilename('anime.mp4'));
+console.log(getExtensionFilename('tai-lieu-quan-trong.doc'));
+console.log(getExtensionFilename('C:\Users\NamHandsome\Desktop\index.html'));
