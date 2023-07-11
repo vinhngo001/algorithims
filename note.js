@@ -51,6 +51,7 @@
 // Phương thức nào sau đây được dùng tạo value cho key của một Map? : set()
 // Từ khóa nào được sử dụng để ném ra một ngoại lệ? : catch
 // Ngữ cảnh thực thi global của JavaScript tạo ra 2 thứ cho chúng ta: global object, và từ khóa "this". Đúng hay sai: Đúng
+// Quá trình chuyển đổi trạng thái của một đối tượng thành một chuỗi mà từ đó nó có thể được khôi phục lại được gọi là gì? serialization
 
 /**
     1 == '1'; // true
