@@ -11,6 +11,7 @@ function findMax1() {
 }
 console.log(findMax1(-6, 5, 4));
 
+// sol 2
 function findMax2(a, b, c) {
     const numbers = [];
     numbers.push(a, b, c);
@@ -22,7 +23,7 @@ function findMax2(a, b, c) {
 }
 console.log(findMax2(-6, 5, 23));
 
-
+// sol 3
 function findMax3(a, b, c) {
     var max = a;
     if (b > max && c < max) {

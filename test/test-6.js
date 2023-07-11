@@ -1,19 +1,26 @@
-// viết hàm kiểm tra xem một chuỗi bắt đầu bằng "Java" hay không 
+/*
+  - Viết hàm findMaxDiff nhận tham số là một mảng integer (mảng số nguyên)
+  - Trả về sự khác biệt lớn nhất giữa hai phần tử liền kề của mảng đó.
+  - Nếu mảng có 1 phần tử hoặc không có phần tử nào trả về 0
+  Example:  [1, -10, 5, 18, -9, 5] => 27
+*/
 
-// sol 1
-function startWith1(str){
-    return str.split(0, 5).join('') === "Java" ? true : false;
+function findMaxDiff(arr) {
+    // viết code ở đây.
+    if (arr.length < 2) {
+        return 0;
+    }
+    else {
+        var maxDiff = 0;
+        for (var i = 0; i < arr.length; i++) {
+            maxDiff = (maxDiff < Math.abs(arr[i] - arr[i - 1])) ? Math.abs(arr[i] - arr[i - 1]) : maxDiff;
+        }
+    }
+    return maxDiff;
 }
-console.log(startWith1('Java'))
 
-// sol 2
-function startWith2(str){
-    return str.substring(0, 4) === 'Java' ? true : false;
-}
-console.log(startWith2('XJava'))
+findMaxDiff([1, -10, 5, 18, -9, 5]);
 
-// sol 3
-function startWith3(str){
-    return str.startsWith('Java') ? true : false;
-}
-console.log(startWith3('Javascript'))
+findMaxDiff([5]);
+
+findMaxDiff([]);
